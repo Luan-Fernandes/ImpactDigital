@@ -50,8 +50,10 @@ const NavBar = () => {
   };
 
   const handleScroll = () => {
-    setBgColor(window.scrollY > 250 ? 'rgba(0, 0, 0, 0.8)' : 'transparent');
-
+    if (!navbar) {
+      setBgColor(window.scrollY > 250 ? 'rgba(0, 0, 0, 0.8)' : 'transparent');
+    }
+    
     if (window.scrollY < 520) {
       setStep(1);
     } else if (window.scrollY >= 520 && window.scrollY < 1190) {
@@ -60,6 +62,24 @@ const NavBar = () => {
       setStep(3);
     }
   };
+
+useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [navbar]);
+
+// Adiciona um useEffect para monitorar mudanças no navbar e alterar a cor de fundo
+useEffect(() => {
+  if (navbar) {
+    setBgColor('white');
+  } else {
+    setBgColor('transparent');
+  }
+}, [navbar]);
+
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -70,10 +90,11 @@ const NavBar = () => {
 
   return (
     <nav
+    id='cormenu'
       className='container-nav'
       style={{
         backgroundColor: bgColor,
-        transition: 'background-color 0.3s ease',
+        transition: 'background-color 0.5s ease',
         position: 'fixed',
         width: '100%',
         top: '0',
@@ -82,7 +103,7 @@ const NavBar = () => {
       }}
     >
       <p>Logo</p>
-      <ul className={navbar ? "container-ul-active" : "container-ul"}>
+      <ul  className={navbar ? "container-ul-active" : "container-ul"}>
         <div className={iconPosition()}>{animationNavBar()}</div>
         <li onClick={() => { setNavBar(false); scrollToSection('home'); setStep(1); }} id='adde'>Home</li>
         <li onClick={() => { setNavBar(false); scrollToSection('missao'); setStep(2); }}>Missão</li>
