@@ -7,6 +7,9 @@ import { LuTarget } from "react-icons/lu"; //missão <LuTarget />
 import { FaGear } from "react-icons/fa6"; //serviços <FaGear />
 import { FaAddressBook } from "react-icons/fa"; //contato <FaAddressBook />
 
+//img logo
+import  logo from '../img/logo.png';
+
 const NavBar = () => {
   const [navbar, setNavBar] = useState(false);
   const [bgColor, setBgColor] = useState('transparent');
@@ -102,7 +105,7 @@ useEffect(() => {
         zIndex: '1000',
       }}
     >
-      <p>Logo</p>
+      <img className='logo' src={logo} alt="" />
       <ul  className={navbar ? "container-ul-active" : "container-ul"}>
         <div className={iconPosition()}>{animationNavBar()}</div>
         <li onClick={() => { setNavBar(false); scrollToSection('home'); setStep(1); }} id='adde'>Home</li>
