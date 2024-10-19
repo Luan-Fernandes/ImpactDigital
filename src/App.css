@@ -1,0 +1,4 @@
+.Container-pai{
+    display: flex;
+    flex-direction: column;
+}

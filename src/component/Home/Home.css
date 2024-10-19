@@ -1,0 +1,112 @@
+.home {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    width: 100vw; /* 100% da largura da viewport */
+    height: 100vh; /* 100% da altura da viewport */
+    color: rgba(255, 255, 255, 0.753);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-filho{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.699);
+
+}
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.699);
+}
+b{
+    color: #0796da;
+    text-shadow: 2px 1px 0 #ce7e4880;
+}
+.container-button{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 1%;
+        padding: 0;
+        font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .home{
+        background-image: url('../img/fundoMobile.jpg');
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .container-filho{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;   
+        flex-direction: column;
+    }
+    
+    .titulo{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 30px;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        font-size: 8vw;
+        
+    }
+    
+    .text{
+        display: flex;
+  
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        margin-top: 4%;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    b{
+        font-size: 50px;
+       
+    }
+    .container-button{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90%;
+            margin-top: 4%;
+            padding: 0;
+            font-size: 20px;
+    }
+}
