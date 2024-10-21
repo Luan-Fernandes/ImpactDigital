@@ -2,7 +2,7 @@ import React from 'react'
 import './Sobre.css';
 
 //img
-import imgSobre from '../img/imgSobre.png'
+import imgSobre from '../img/imgsobre.png'
 import imgMobile from '../img/imgmissaomobile.png'
 
 //redes sociais
