@@ -1,5 +1,5 @@
 .home {
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/fundo.png');
     background-size: cover; /* Faz com que a imagem cubra toda a área */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .container-filho{
     width: 50%;
@@ -18,6 +18,7 @@
     justify-content: flex-end;
     align-items: center;   
     flex-direction: column;
+    margin-left: 10%;
 }
 
 .titulo{
@@ -30,6 +31,7 @@
     padding: 0;
     font-size: 4vw;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.699);
+    color: #ffffff;
 
 }
 
@@ -42,6 +44,7 @@
     padding: 0;
     font-size: 1.5vw;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.699);
+    color: #a1a1a1;
 }
 b{
     color: #0796da;
@@ -71,6 +74,7 @@ b{
         justify-content: flex-end;
         align-items: center;   
         flex-direction: column;
+        margin-left: 0;
     }
     
     .titulo{
@@ -83,12 +87,13 @@ b{
         margin: 0;
         padding: 0;
         font-size: 8vw;
+        color: #ffffff;
         
     }
     
     .text{
         display: flex;
-  
+        color: #a1a1a1;
         justify-content: flex-start;
         align-items: center;
         width: 90%;

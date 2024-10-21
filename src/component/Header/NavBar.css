@@ -11,7 +11,7 @@
     transition: .5s ease;
 }
 
-.icon-navbar-missao{
+.icon-navbar-sobre{
     font-size: 1.5vw;
     position: absolute;
     left: 58.5%;
@@ -105,7 +105,7 @@
     .icon-navbar-home{
     display: none;
     }
-    .icon-navbar-missao{
+    .icon-navbar-sobre{
         display: none;
     }
     .icon-navbar-contato{
