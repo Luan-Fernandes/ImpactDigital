@@ -38,7 +38,7 @@ const Contato = ({ id }) => {
                     </label>
                     <label>
                         <span>WhatsApp*</span>
-                        <input type="email" name='email' required />
+                        <input type="text" name='email' required />
                     </label>
                     <label>
                         <span>Empresa (Opcional)</span>

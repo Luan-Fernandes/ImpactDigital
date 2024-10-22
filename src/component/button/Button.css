@@ -12,6 +12,7 @@
     cursor: pointer;
   }
   
+  
   .cta:focus {
     outline: none;
   }
