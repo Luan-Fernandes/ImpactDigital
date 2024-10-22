@@ -10,3 +10,34 @@ body {
   width: 100%;
 
 }
+@keyframes animacao {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes animacao2 {
+  from{
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animacao3 {
+  from{
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+

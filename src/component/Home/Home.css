@@ -19,6 +19,7 @@
     align-items: center;   
     flex-direction: column;
     margin-left: 10%;
+    
 }
 
 .titulo{
@@ -32,7 +33,6 @@
     font-size: 4vw;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.699);
     color: #ffffff;
-
 }
 
 .text{

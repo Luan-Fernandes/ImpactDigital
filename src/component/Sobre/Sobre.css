@@ -29,6 +29,9 @@
     line-height: 0px;
     justify-content: center;
     align-items: center;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .con-span h1 {
@@ -59,6 +62,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    animation: animacao3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .con-desc h1 {
@@ -76,8 +82,10 @@
 
 /*---------------------------------------*/
 .img-desc {
-
     width: 50%;
+    animation: animacao2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .img-desc img {
@@ -105,6 +113,11 @@
     .con-span p {
 
         font-size: 5vw;
+    }
+    .con-desc{
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     }
 
     /*----------------------------------------*/

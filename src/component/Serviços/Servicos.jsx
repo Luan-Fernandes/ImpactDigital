@@ -35,26 +35,26 @@ const Servicos = ({ id }) => {
         <section className='containers'>
 
           {listaServicos.map(servico => (
-    <div className='container-unicos card' key={servico.id}>
-      <div className='container-interno'>
-        <div className='icon'>{servico.icon}</div>
-        <div className='desc-interna'>
-          <h1>{servico.servico}</h1>
-          <p>{servico.desc}</p>
-        </div>
-      </div>
-    </div>
-  ))}
+            <div className='container-unicos' key={servico.id}>
+              <div className='container-interno'>
+                <div className='icon'>{servico.icon}</div>
+                <div className='desc-interna'>
+                  <h1>{servico.servico}</h1>
+                  <p>{servico.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </section>
         <div className='desc-diferenciais'>
           <span className='desc-servico'>
             <label>Nossos</label>
-          <h1>Diferenciais</h1>
+            <h1>Diferenciais</h1>
           </span>
-          <p>Equipe especializada e criativa, composta por videomaker, criador de sites e designer de artes, além da gestão de social media e tráfego pago.
-Soluções customizadas de acordo com o perfil de cada cliente.
-Foco em resultados: otimização constante para melhorar performance e maximizar ROI.</p>
-</div>
+          <p className='class-animation'>Equipe especializada e criativa, composta por videomaker, criador de sites e designer de artes, além da gestão de social media e tráfego pago.
+            Soluções customizadas de acordo com o perfil de cada cliente.
+            Foco em resultados: otimização constante para melhorar performance e maximizar ROI.</p>
+        </div>
       </div>
     </div>
   )

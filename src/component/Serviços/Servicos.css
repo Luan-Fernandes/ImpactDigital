@@ -18,6 +18,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .desc-servico label{
     color: #ce7e48;
@@ -50,6 +53,9 @@
     color: #ce7e48;
     border-radius: 30px;
     transition: .5s ease;
+    animation: animacao2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .container-unicos:hover{
     box-shadow: 0px 4px 20px #ce7e48; /* Adicione esta linha */
@@ -99,14 +105,11 @@
     font-size: 2vw;
     color: #a1a1a1;
 }
-.titulo-diferenciais h1{
-
+.class-animation{
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
-.titulo-diferenciais p{
-
-}
-
-
 @media (max-width: 425px){
     .desc-servico label{
         color: #ce7e48;
