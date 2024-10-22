@@ -1,0 +1,141 @@
+.servicos {
+    background-color: #1a1d24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 9vh;
+}
+.desc-servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc-servico label{
+    color: #ce7e48;
+    font-size: 2vw;
+}
+.desc-servico h1{
+    
+    margin: 0;
+    color: white;
+    font-size: 3.5vw;
+}
+.containers{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.container-unicos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:350px;
+    height: 350px;
+    border: 2px solid;
+    color: #ce7e48;
+    border-radius: 30px;
+    transition: .5s ease;
+  
+   
+}
+.container-unicos:hover{
+    box-shadow: 0px 4px 20px #ce7e48; /* Adicione esta linha */
+    transform: rotate(-2deg);
+}
+
+.container-interno{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width:90%;
+    height: 90%;
+    
+}
+.icon{
+    font-size:100px;
+    display: flex;
+    color: #ce7e48;
+}
+.desc-interna{
+  
+    width: 100%;
+    height: 75%;
+}
+.desc-interna h1{
+    font-size:30px;
+    color: white;
+}
+.desc-interna p{
+    font-size: 18px;
+    color: #a1a1a1;
+}
+.desc-diferenciais{
+    width: 90%;
+}
+.titulo-diferenciais{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-direction: column;
+    margin: 0;
+}
+.desc-diferenciais{
+    font-size: 2vw;
+    color: #a1a1a1;
+}
+.titulo-diferenciais h1{
+
+}
+.titulo-diferenciais p{
+
+}
+
+
+@media (max-width: 425px){
+    .desc-servico label{
+        color: #ce7e48;
+        font-size: 6vw;
+    }
+    .desc-servico h1{
+        margin: 0;
+        color: white;
+        font-size: 10vw;
+    }
+    .desc-diferenciais{
+        font-size: 5vw;
+        color: #a1a1a1;
+    }
+}
+@media (max-width: 1000px){
+    .desc-servico label{
+        color: #ce7e48;
+        font-size: 6vw;
+    }
+    .desc-servico h1{
+        margin: 0;
+        color: white;
+        font-size: 10vw;
+    }
+    .desc-diferenciais{
+        font-size: 3vw;
+        color: #a1a1a1;
+    }
+}
