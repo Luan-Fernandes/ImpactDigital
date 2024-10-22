@@ -55,7 +55,7 @@
     transition: .5s ease;
     animation: animacao2 linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 .container-unicos:hover{
     box-shadow: 0px 4px 20px #ce7e48; /* Adicione esta linha */

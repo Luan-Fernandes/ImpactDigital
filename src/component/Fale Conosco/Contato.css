@@ -1,0 +1,119 @@
+.contato {
+    background: rgb(206,126,72);
+    background: linear-gradient(0deg, rgba(206,126,72,1) 0%, rgba(26,29,36,1) 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5vh;
+}
+.contato form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.desccontato{
+    margin-top: 10vh;
+}
+.contato form h1{
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+}
+.contato form label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 12%;
+}
+.contato form label span{
+    color: rgba(255, 255, 255, 0.884);
+}
+.contateme{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contateme-desc{
+    width: 40%;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.redes{
+    display: flex;
+   
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 2.2vw;
+}
+.redes h2{
+    font-size: 2vw ;
+    color: #ce7e48;
+}
+a {
+    text-decoration: none; 
+    color: black;
+    display: flex;
+}
+.insta{
+    transition: .5s ease;
+}
+.insta:hover{
+    transform: translateY(-5px);
+    color: #f01382;
+}
+.link{
+    transition: .5s ease;
+}
+.link:hover{
+    transform: translateY(-5px);
+    color: #0796da;
+}
+.meu-textarea {
+    width: 100%;
+height: 150px; 
+    resize: none; 
+}
+@media (max-width: 1000px){
+    .contateme{
+        flex-direction: column;
+    }
+    .contateme-desc{
+        width: 90%;
+    }
+    .contato form{
+  
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .redes{
+        display: flex;
+   
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 6vw;
+    }
+    .redes h2{
+        font-size: 5vw ;
+        color: #ce7e48;
+    }
+    .contato form h1{
+        color: white;
+        font-size: 9vw;
+        margin: 0;
+    }
+}

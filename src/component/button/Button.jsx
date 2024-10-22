@@ -3,11 +3,11 @@ import React from 'react'
 //css
 import './Button.css'
 
-const Button = () => {
+const Button = ({nome}) => {
   return (
    /* From Uiverse.io by mobinkakei */ 
-<button class="cta">
-  <span class="span">Fale Conosco</span>
+<button class="cta" type='submit'>
+  <span class="span">{nome}</span>
   <span class="second">
     <svg
       width="50px"

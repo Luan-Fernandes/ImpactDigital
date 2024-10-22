@@ -17,7 +17,7 @@ const Home = ({id}) => {
       <div className='container-filho'>
       <h1 className='titulo'><b>IMPACTO</b> no seu negocio.</h1>
       <p className='text'>Seu Alcance com Gestão de Tráfego Pago de Alta Performance.</p>
-      <div className='container-button'><Button></Button></div>
+      <div className='container-button'><Button nome="Fale Conosco"></Button></div>
       </div>
     </div>
   )
