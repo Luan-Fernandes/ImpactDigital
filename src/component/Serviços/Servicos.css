@@ -53,7 +53,7 @@
     color: #ce7e48;
     border-radius: 30px;
     transition: .5s ease;
-    animation: animacao2 linear;
+    animation: animacao linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }

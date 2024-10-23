@@ -8,6 +8,16 @@
     width: 100%;
     gap: 5vh;
 }
+.desc-interna h1{
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.desc-interna p{
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
 
 .contato form{
     display: flex;
@@ -15,7 +25,7 @@
     width: 40%;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
 }
 .contato form input{
     border: 1px solid #ce7e48;
@@ -35,6 +45,9 @@
     color: white;
     font-size: 2vw;
     margin: 0;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 .contato form label{
     display: flex;
@@ -49,24 +62,23 @@
     color: rgba(255, 255, 255, 0.884);
 }
 .contateme{
-  
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
 }
 .contateme-desc{
     width: 40%;
-    animation: animacao linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 .redes{
     display: flex;
-   
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
     font-size: 2.2vw;
+    animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .redes h2{
     font-size: 2vw ;
@@ -106,13 +118,11 @@ height: 150px;
         width: 90%;
     }
     .contato form{
-  
         display: flex;
         flex-direction: column;
         width: 90%;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
     }
     .redes{
         display: flex;

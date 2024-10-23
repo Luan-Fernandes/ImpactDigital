@@ -1,0 +1,35 @@
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    color:#ce7e48 ;
+    line-height: 0;
+}
+.fontsize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+.seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1s infinite; /* Define a animação */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Posição inicial */
+    }
+    40% {
+      transform: translateY(-10px); /* Sobe */
+    }
+    60% {
+      transform: translateY(-5px); /* Desce um pouco */
+    }
+  }

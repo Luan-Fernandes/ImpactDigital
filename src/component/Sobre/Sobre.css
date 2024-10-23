@@ -56,7 +56,7 @@
     display: flex;
 }
 
-.con-desc {
+.con-desc{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,10 @@
     font-size: 2.8vw;
     width: 80%;
     margin: 0;
+    animation: animacao3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
 }
 
 .con-desc p {
@@ -75,6 +79,10 @@
     width: 80%;
     margin: 0;
     color: #a1a1a1;
+    animation: animacao3 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
 }
 
 /*---------------------------------------*/
@@ -82,7 +90,7 @@
     width: 50%;
     animation: animacao2 linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 
 .img-desc img {
@@ -110,11 +118,6 @@
     .con-span p {
 
         font-size: 5vw;
-    }
-    .con-desc{
-    animation: animacao linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
     }
 
     /*----------------------------------------*/
@@ -145,12 +148,18 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
+        animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
    
     }
     .con-desc p {
         font-size: 3vw;
         width: 90%;
         margin: 0;
+        animation: animacao linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
   
     }
     /*-----------------------------*/

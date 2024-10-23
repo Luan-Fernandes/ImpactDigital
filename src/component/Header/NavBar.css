@@ -7,26 +7,29 @@
 .icon-navbar-home{
     font-size: 1.5vw;
     position: absolute;
-    left: 42.5%;
+    left: 41.5%;
     transition: .5s ease;
 }
 
 .icon-navbar-sobre{
     font-size: 1.5vw;
     position: absolute;
-    left: 58.5%;
+    left: 52.5%;
     transition: .5s ease;
 }
 
 .icon-navbar-servicos{
     font-size: 1.5vw;
     position: absolute;
-    left: 75.5%;
+    left: 63.5%;
     transition: .5s ease;
 }
 
 .icon-navbar-contato{
-
+    font-size: 1.5vw;
+    position: absolute;
+    left: 76.5%;
+    transition: .5s ease;
 }
 
 

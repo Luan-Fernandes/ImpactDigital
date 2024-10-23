@@ -10,10 +10,10 @@ import { FaAddressBook } from "react-icons/fa"; // contato <FaAddressBook />
 // img logo
 import logo from '../img/logo.png';
 
-const NavBar = () => {
+const NavBar = ({step,setStep,scrollToSection}) => {
   const [navbar, setNavBar] = useState(false);
   const [bgColor, setBgColor] = useState('transparent');
-  const [step, setStep] = useState(1);
+ 
 
   const animationNavBar = () => {
     switch (step) {
@@ -45,33 +45,37 @@ const NavBar = () => {
     }
   };
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+ 
 
   const handleScroll = () => {
     if (!navbar) {
       setBgColor(window.scrollY > 250 ? 'rgba(0, 0, 0, 0.8)' : 'transparent');
     }
-    
-    if (window.scrollY < 520) {
-      setStep(1);
-    } else if (window.scrollY >= 520 && window.scrollY < 1190) {
-      setStep(2);
+  
+    const scrollY = window.scrollY;
+    let newStep;
+  
+    if (scrollY < 520) {
+      newStep = 1;
+    } else if (scrollY < 1190) {
+      newStep = 2;
+    } else if (scrollY < 2630) {
+      newStep = 3;
     } else {
-      setStep(3);
+      newStep = 4;
+    }
+    if (newStep !== step) {
+      setStep(newStep);
     }
   };
+  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [navbar]);
+  }, [step]);
 
   useEffect(() => {
     if (navbar) {
@@ -80,7 +84,7 @@ const NavBar = () => {
       setBgColor('transparent');
     }
   }, [navbar]);
-
+  console.log(step)
   return (
     <nav
       id='cormenu'
@@ -101,6 +105,7 @@ const NavBar = () => {
         <li onClick={() => { setNavBar(false); scrollToSection('home'); setStep(1); }}>Home</li>
         <li onClick={() => { setNavBar(false); scrollToSection('sobre'); setStep(2); }}>Sobre</li>
         <li onClick={() => { setNavBar(false); scrollToSection('servicos'); setStep(3); }}>Serviços</li>
+        <li onClick={() => { setNavBar(false); scrollToSection('contato'); setStep(4); }}>Fale Conosco</li>
       </ul>
       <div className='iconnav' onClick={() => setNavBar(!navbar)}>
         <div className={navbar ? "container-1Active" : "container-1"}></div>
