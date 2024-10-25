@@ -48,26 +48,34 @@ const NavBar = ({step,setStep,scrollToSection}) => {
  
 
   const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight; // Altura total do documento menos a altura da janela
+    
+    // Atualizar a cor de fundo da navbar de acordo com a rolagem
     if (!navbar) {
-      setBgColor(window.scrollY > 250 ? 'rgba(0, 0, 0, 0.8)' : 'transparent');
+      setBgColor(scrollY > (docHeight * 0.1) ? 'rgba(0, 0, 0, 0.8)' : 'transparent');
     }
   
-    const scrollY = window.scrollY;
+    // Definir os pontos de passo com base na porcentagem da rolagem total
+    const scrollPercentage = scrollY / docHeight;
     let newStep;
   
-    if (scrollY < 520) {
+    if (scrollPercentage < 0.2) {
       newStep = 1;
-    } else if (scrollY < 1190) {
+    } else if (scrollPercentage < 0.4) {
       newStep = 2;
-    } else if (scrollY < 2630) {
+    } else if (scrollPercentage < 0.7) {
       newStep = 3;
     } else {
       newStep = 4;
     }
+  
+    // Atualizar o passo apenas se ele for diferente do atual
     if (newStep !== step) {
       setStep(newStep);
     }
   };
+  
   
 
   useEffect(() => {

@@ -8,6 +8,72 @@
     width: 100%;
     gap: 5vh;
 }
+
+.button{
+    border: 1px solid #ce7e48;
+    background-color: transparent;
+    color: white;
+    width: 40%;
+    height: 5vh;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+.rotate {
+    font-size: 20px;
+    color: black;
+    animation: rotate 1s linear infinite; /* Animação de 2 segundos para rotação contínua */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.seta1, .seta2, .seta3 {
+    transition: .5s ease;
+}
+.button:hover .seta1 {
+    animation: piscar 0.8s infinite;
+    color: black;
+}
+
+.button:hover .seta2 {
+    animation: piscar 0.8s infinite;
+    color: black;
+    animation-delay: 0.2s; /* Atraso de 0.2s */
+}
+
+.button:hover .seta3 {
+    animation: piscar 0.8s infinite;
+    color: black;
+    animation-delay: 0.4s; /* Atraso de 0.4s */
+}
+
+@keyframes piscar {
+    0%, 20%, 100% {
+        opacity: 0;
+
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
 .desc-interna h1{
     animation: animacao linear;
     animation-timeline: view();

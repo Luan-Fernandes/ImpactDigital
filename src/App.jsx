@@ -19,6 +19,7 @@ const App = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    return id
   };
   return (
     <div className='Container-pai'>

@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
 }
-.imgSobreMobile{
+
+.imgSobreMobile {
     display: none;
 }
 
@@ -56,7 +57,7 @@
     display: flex;
 }
 
-.con-desc{
+.con-desc {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -68,9 +69,9 @@
     font-size: 2.8vw;
     width: 80%;
     margin: 0;
-    animation: animacao3 linear;
+    animation: animacao linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 
 }
 
@@ -79,9 +80,9 @@
     width: 80%;
     margin: 0;
     color: #a1a1a1;
-    animation: animacao3 linear;
+    animation: animacao linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
 
 }
 
@@ -90,7 +91,7 @@
     width: 50%;
     animation: animacao2 linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 20%;
 }
 
 .img-desc img {
@@ -98,6 +99,7 @@
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
 }
+
 /* TABLET-------------------*/
 @media (max-width: 1000px) {
     .container-sobre {
@@ -105,9 +107,7 @@
     }
 
     /*-----------------------------------------*/
-    .con-span {
-    
-    }
+    .con-span {}
 
     .con-span h1 {
         font-size: 9vw;
@@ -127,20 +127,21 @@
         display: flex;
         flex-direction: column;
     }
+
     .con-desc {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1vh;
-
-    
     }
+
     .con-desc h1 b {
         display: flex;
         font-size: 6vw;
         line-height: 50px;
     }
+
     .con-desc h1 {
         font-size: 6vw;
         width: 90%;
@@ -148,32 +149,32 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
-        animation: animacao linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-   
+        
+
     }
+
     .con-desc p {
         font-size: 3vw;
         width: 90%;
         margin: 0;
-        animation: animacao linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 15%;
-  
     }
+
     /*-----------------------------*/
-    .img-desc{
+    .img-desc {
         display: none;
     }
-    .imgSobreMobile{
+
+    .imgSobreMobile {
         display: block;
         width: 100%;
+        
     }
-    .imgSobreMobile img{
+
+    .imgSobreMobile img {
         width: 100%;
     }
 }
+
 /*Celular----------------------*/
 @media (max-width: 425px) {
     .container-sobre {
@@ -201,6 +202,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .con-desc {
         width: 100%;
         display: flex;
@@ -208,13 +210,15 @@
         align-items: center;
         gap: 1vh;
 
-    
+
     }
+
     .con-desc h1 b {
         display: flex;
         font-size: 8vw;
         line-height: 50px;
     }
+
     .con-desc h1 {
         font-size: 8vw;
         width: 90%;
@@ -222,26 +226,30 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
-   
+
     }
+
     .con-desc p {
         font-size: 5vw;
         width: 90%;
         margin: 0;
-  
+
     }
+
     /*-----------------------------*/
-    .img-desc{
+    .img-desc {
         display: none;
     }
-    .imgSobreMobile{
+
+    .imgSobreMobile {
         display: block;
         width: 100%;
-        animation: animacao3 linear;
+        animation: animacao linear;
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
-    .imgSobreMobile img{
+
+    .imgSobreMobile img {
         width: 100%;
     }
 }
