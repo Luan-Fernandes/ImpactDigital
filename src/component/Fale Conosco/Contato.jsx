@@ -73,7 +73,7 @@ const Contato = ({ id }) => {
         <form action="https://formsubmit.co/mandara_luan@hotmail.com" method="POST" onSubmit={handleSubmit}>
           <h1>Contato</h1>
           <label>
-            <span>Nome*</span>
+            <span>Nome</span>
             <input 
               type="text" 
               name="nome" 
